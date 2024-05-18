@@ -3,12 +3,14 @@
   border-left: 1px solid #dddddd35;
   border-right: 1px solid #dddddd35;
   background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid #dddddd35;
+  border-radius: 5px;
   height: 100%;
   display: flex;
   flex-direction: column;
 
   .top {
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,6 +44,7 @@
   .icons {
     display: flex;
     gap: 20px;
+    width: 100px;
   }
   .icons img {
     width: 20px;
@@ -63,7 +66,7 @@
         align-self: flex-end;
         .texts {
           p {
-            background-color: #5183fe;
+            background-color: #5182feaa;
           }
         }
       }
@@ -89,7 +92,7 @@
 
         p {
           padding: 20px;
-          background-color: rgba(17, 25, 40, 0.3);
+          background-color: rgba(17, 25, 40, 0.86);
           border-radius: 10px;
           color: white;
         }
@@ -101,7 +104,7 @@
     }
   }
   .bottom {
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -133,13 +136,10 @@
     }
   }
   .sendButton {
-    /* background-color: #5183fe;
-    color: white;
-    padding: 10px 20px; */
     border: none;
     width: 30px;
     height: 30px;
-    /* border-radius: 5px; */
+
     cursor: pointer;
 
     &:disabled {
@@ -151,9 +151,10 @@
     position: relative;
   }
   .picker {
+    width: 300px;
     position: absolute;
     bottom: 50px;
-    left: 0;
+    right: 0px;
   }
 }
 
@@ -162,8 +163,25 @@
     width: 318px;
     margin-bottom: 40px;
     margin-top: 40px;
+    input {
+      width: 100px;
+      padding: 15px 5px !important;
+    }
+    .bottom .icons > :nth-child(3) {
+      display: none;
+    }
+    .bottom .icons {
+      width: 60px;
+    }
     .bottom {
-      display: block;
+      padding: 10px 8px;
+      gap: 2px;
+    }
+    .epr-main {
+      width: 300px !important;
+    }
+    .picker {
+      right: -30px;
     }
   }
 }

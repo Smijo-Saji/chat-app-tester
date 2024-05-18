@@ -28,7 +28,7 @@ function Detail() {
       <div className="user">
         <img src={user?.avatar || "img/avatar.png"} alt="" />
         <h2>{user?.username}</h2>
-        <p>Lorem ipsum dolo---.</p>
+        <p>Be enough for yourself..😏😎</p>
       </div>
       <div className="info">
         <div className="option">
@@ -51,11 +51,8 @@ function Detail() {
           <div className="photos">
             <div className="photoItem">
               <div className="photoDetail">
-                <img
-                  src="https://i.postimg.cc/nrBM0FJ5/cranberry-bog.jpg"
-                  alt=""
-                />
-                <span>photo_123</span>
+                <img src="https://i.postimg.cc/j5NpL540/images.jpg" alt="" />
+                <span>photo_23/01</span>
               </div>
               <img src="img/download.png" alt="" className="icon" />
             </div>
@@ -63,11 +60,8 @@ function Detail() {
           <div className="photos">
             <div className="photoItem">
               <div className="photoDetail">
-                <img
-                  src="https://i.postimg.cc/nrBM0FJ5/cranberry-bog.jpg"
-                  alt=""
-                />
-                <span>photo_123</span>
+                <img src="https://i.postimg.cc/MKw9WXQJ/download.jpg" alt="" />
+                <span>photo_01/84</span>
               </div>
               <img src="img/download.png" alt="" className="icon" />
             </div>
@@ -83,8 +77,8 @@ function Detail() {
           {isCurrentUserBlocked
             ? "You are Blocked!"
             : isReceiverBlocked
-            ? "User Blocked"
-            : "Block User"}
+            ? "Blocked"
+            : "Block"}
         </button>
         <button className="logout" onClick={() => auth.signOut()}>
           Logout

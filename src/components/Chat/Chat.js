@@ -115,7 +115,7 @@ function Chat({ setDtl }) {
           <img src={user?.avatar || "img/avatar.png"} alt="" />
           <div className="texts" onClick={() => setDtl((prev) => !prev)}>
             <span>{user?.username}</span>
-            <p>Lorem, ipsum dolo..</p>
+            <p>last seen 1 min ago </p>
           </div>
         </div>
         <div className="icons">
