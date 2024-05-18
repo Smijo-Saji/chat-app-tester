@@ -25,3 +25,10 @@
     cursor: pointer;
   }
 }
+@media (width<500px) {
+  .userinfo {
+    .icons img {
+      margin-left: 10px;
+    }
+  }
+}

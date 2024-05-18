@@ -10,7 +10,7 @@
   }
   .searchBar {
     flex: 1;
-    background-color: rgba(17, 25, 40, 0.5);
+    background-color: rgba(17, 25, 40, 0.877);
     display: flex;
     align-items: center;
     gap: 20px;

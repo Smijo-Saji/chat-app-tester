@@ -139,6 +139,7 @@
     border: none;
     width: 30px;
     height: 30px;
+    margin-left: 20px;
 
     cursor: pointer;
 
@@ -182,6 +183,10 @@
     }
     .picker {
       right: -30px;
+    }
+    .sendButton {
+      width: 25px;
+      height: 25px;
     }
   }
 }
