@@ -70,8 +70,8 @@ function Login() {
   };
 
   return (
-    <div className="login">
-      <div className="item">
+    <div className="login-1">
+      {/* <div className="item">
         <h2>Welcome</h2>
         <form onSubmit={handleLogin}>
           <input type="email" placeholder="Email" name="email" />
@@ -98,6 +98,65 @@ function Login() {
           <input type="password" placeholder="Password" name="password" />
           <button disabled={loading}>{loading ? "Loading" : "Sign Up"}</button>
         </form>
+      </div> */}
+
+      {/* ==== */}
+      <div className="main">
+        <input type="checkbox" id="chk" aria-hidden="true" />
+        <div className="signup">
+          <form onSubmit={handleRegister}>
+            <label for="chk" aria-hidden="true" className="signuplabel">
+              Signup
+            </label>
+            <div className="fileupload">
+              <label htmlFor="file">
+                <img src={avatar.url || "img/avatar.png"} alt="" />
+                <span>Upload an image</span>
+              </label>
+              <input
+                type="file"
+                id="file"
+                style={{ display: "none" }}
+                onChange={(e) => handleAvatar(e)}
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Username"
+              name="username"
+              required
+            />
+            <input type="email" placeholder="Email" name="email" required />
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+            <button disabled={loading}>
+              {loading ? "Loading" : "Sign Up"}
+            </button>
+          </form>
+        </div>
+        <div className="login">
+          <div className="logindiv">
+            <form onSubmit={handleLogin}>
+              <label for="chk" aria-hidden="ture">
+                Login
+              </label>
+              <input type="email" placeholder="Email" name="email" required />
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                required
+              />
+              <button disabled={loading}>
+                {loading ? "Loading" : "Sign In"}
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   );
